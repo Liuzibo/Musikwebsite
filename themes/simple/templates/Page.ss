@@ -22,23 +22,22 @@ Change it, enhance it and most importantly enjoy it!
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<% require themedCSS('reset') %>
-	<% require themedCSS('typography') %>
-	<% require themedCSS('form') %>
-	<% require themedCSS('layout') %>
+	<% require themedCSS('bootstrap.min') %>
+	<% require themedCSS('common') %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include Header %>
 <div class="main" role="main">
-	<div class="inner typography line">
+	<div class="container">
 		$Layout
 	</div>
 </div>
 <% include Footer %>
 
-<% require javascript('framework/thirdparty/jquery/jquery.js') %>
 <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
+<script type="text/javascript" src="{$ThemeDir}/javascript/jquery.js"></script>
+<script type="text/javascript" src="{$ThemeDir}/javascript/bootstrap.min.js"></script>
 <script type="text/javascript" src="{$ThemeDir}/javascript/script.js"></script>
 
 </body>

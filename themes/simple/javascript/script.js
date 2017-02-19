@@ -18,7 +18,8 @@ jQuery.noConflict();
 			  }
 		});
 
-		if (!$.browser.msie || ($.browser.msie && (parseInt($.browser.version, 10) > 8))) {
+		// if (!$.browser.msie || ($.browser.msie && (parseInt($.browser.version, 10) > 8))) {
+		if (true) {
 			var searchBarButton = $("span.search-dropdown-icon");
 			var searchBar = $('div.search-bar');
 			var menuButton = $("span.nav-open-button");
